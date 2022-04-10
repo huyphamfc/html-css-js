@@ -1,0 +1,38 @@
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: gray;
+}
+
+/* FLEXBOX - FORM */
+.form {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.form__row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.form__label {
+    flex-shrink: 0;
+    flex-basis: 80px;
+}
+
+.form__input {
+    flex-grow: 1;
+}
