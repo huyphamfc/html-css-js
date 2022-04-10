@@ -13,7 +13,7 @@ body {
 
 /* FLEXBOX */
 .flex__container {
-    width: 500px;
+    width: 600px;
     height: 300px;
     margin: 20px auto;
     background-color: gray;
@@ -21,19 +21,18 @@ body {
 }
 
 .flex__item {
-    width: 100px;
+    width: 250px;
     text-align: center;
     line-height: 300px;
 }
 
 .flex__item--color-r {
     background-color: red;
-    flex-grow: 1;
+    flex-shrink: 2;
 }
 
 .flex__item--color-g {
     background-color: green;
-    flex-grow: 3;
 }
 
 .flex__item--color-b {
@@ -41,8 +40,15 @@ body {
 }
 
 /* 
-Flex Container  : 500
-Flex Items      : 100
-Flex Item Red   : (500 - 100 - 100 - 100)/(1+3)*1 + 100 = 150
-Flex Item Green : (500 - 100 - 100 - 100)/(1+3)*3 + 100 = 250
+Flex Container  : 600
+Flex Items      : 250
+250*3 = 750 >> overflow
+-shrink-
+    case 1: default
+        Flex Items: 600/3 = 200 >> Gap: 250 - 200 = 50
+        Total Gap: 50*3 = 150
+    case 2: Red: 2, Green: 1, Blue: 1
+        Flex Item - Red     : 250 - [Total Gap/(2 + 1 + 1)]*2 = 175
+        Flex Item - Green   : 250 - [Total Gap/(2 + 1 + 1)]*1 = 212.5
+        Flex Item - Blue    : 250 - [Total Gap/(2 + 1 + 1)]*1 = 212.5
 */
