@@ -28,7 +28,7 @@ body {
 
 .flex__item--color-r {
     background-color: red;
-    flex-shrink: 2;
+    flex-basis: 300px;
 }
 
 .flex__item--color-g {
@@ -40,15 +40,6 @@ body {
 }
 
 /* 
-Flex Container  : 600
-Flex Items      : 250
-250*3 = 750 >> overflow
--shrink-
-    case 1: default
-        Flex Items: 600/3 = 200 >> Gap: 250 - 200 = 50
-        Total Gap: 50*3 = 150
-    case 2: Red: 2, Green: 1, Blue: 1
-        Flex Item - Red     : 250 - [Total Gap/(2 + 1 + 1)]*2 = 175
-        Flex Item - Green   : 250 - [Total Gap/(2 + 1 + 1)]*1 = 212.5
-        Flex Item - Blue    : 250 - [Total Gap/(2 + 1 + 1)]*1 = 212.5
+???
+Pending ...
 */
