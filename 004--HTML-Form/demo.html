@@ -10,7 +10,7 @@
 
 <body>
     <h1>Forms Demo</h1>
-    <form action="/tacos">
+    <form action="/form-submission">
         <p>
             <label for="username">Enter user name: </label>
             <input type="text" placeholder="User Name" id="username" name="username">
@@ -43,6 +43,28 @@
     <form action="https://www.youtube.com/results">
         <input type="text" name="search_query">
         <button>Search YouTube</button>
+    </form>
+    <h2>More Inputs</h2>
+    <form action="/form-submission">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+        <p>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="others" value="others">
+            <label for="others">Others</label>
+        </p>
+        <p>
+            <label for="meal">Please select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="steak" selected>Steak</option>
+            </select>
+        </p>
+        <button>Submit</button>
     </form>
 </body>
 
