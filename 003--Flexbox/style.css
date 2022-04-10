@@ -1,0 +1,48 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* FLEXBOX */
+.flex__container {
+    width: 500px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: gray;
+    display: flex;
+}
+
+.flex__item {
+    width: 100px;
+    text-align: center;
+    line-height: 300px;
+}
+
+.flex__item--color-r {
+    background-color: red;
+    flex-grow: 1;
+}
+
+.flex__item--color-g {
+    background-color: green;
+    flex-grow: 3;
+}
+
+.flex__item--color-b {
+    background-color: blue;
+}
+
+/* 
+Flex Container  : 500
+Flex Items      : 100
+Flex Item Red   : (500 - 100 - 100 - 100)/(1+3)*1 + 100 = 150
+Flex Item Green : (500 - 100 - 100 - 100)/(1+3)*3 + 100 = 250
+*/
