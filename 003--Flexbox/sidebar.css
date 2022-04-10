@@ -1,0 +1,31 @@
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+/* FLEXBOX - SIDEBAR */
+.sidebar {
+    width: 1000px;
+    margin: 20px auto;
+    gap: 20px;
+    display: flex;
+}
+
+.sidebar__item {
+    flex-grow: 1;
+    flex-basis: 0;
+    /*=> flex: 1 0 0 (grow - shrink - basis)*/
+    padding: 10px;
+    background-color: #45D62F;
+}
+
+.sidebar__item--main-content {
+    flex-grow: 2;
+}
