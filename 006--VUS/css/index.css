@@ -1,0 +1,153 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: white;
+    color: #636363;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    padding-top: 3rem;
+}
+
+.line {
+    background-image: url("../img/Line.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem 0;
+    height: 4rem;
+}
+
+/* HEADER */
+.header__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__content img {
+    padding: 0 1rem;
+}
+
+.header__nav {
+    border-top: 0.1rem solid #636363;
+    border-bottom: 0.1rem solid #636363;
+    margin: 0.5rem 0;
+}
+
+.header__nav ul {
+    list-style: none;
+    padding: 0.5rem 0;
+}
+
+.header__nav li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+.header__nav li:hover {
+    border-bottom: 0.125rem solid #b31c25;
+}
+
+.header__nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #636363;
+}
+
+.header__nav .active {
+    border-bottom: 0.125rem solid #b31c25;
+}
+
+/* CAROUSEL */
+.carousel__content {
+    background-image: url("../img/Carousel.png");
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+}
+
+/* INTRO */
+.intro p {
+    text-align: center;
+    padding: 0 2rem;
+}
+
+/* PROGRAMS */
+.programs__content {
+    display: flex;
+}
+
+.programs__item {
+    width: 25%;
+    padding: 0 1rem;
+}
+
+.programs__item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.programs__item h3 {
+    color: #b31c25;
+    padding: 0.5rem 0;
+}
+
+/* NEWS & EVENTS */
+.events__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0 1rem 2rem;
+}
+
+.events__content figure:first-of-type {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+}
+
+.events__image {
+    position: relative;
+}
+
+.events__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0.25rem;
+    border-bottom: 0.25rem solid #b31c25;
+}
+
+.events__image figcaption {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1rem;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b31c25;
+    color: white;
+    padding: 1.5rem 3rem;
+}
+
+.footer p {
+    width: 50%;
+}
