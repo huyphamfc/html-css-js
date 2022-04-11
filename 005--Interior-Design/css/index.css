@@ -1,0 +1,150 @@
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+.header ul {
+    list-style: none;
+    background-color: black;
+    padding: 10px 0;
+}
+
+.header li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+/* CAROUSEL */
+.carousel {
+    background-image: url("../img/Carousel.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+}
+
+/* INTRO */
+.intro p span {
+    color: red;
+    font-weight: bold;
+}
+
+.intro__left, .intro__right, .intro__top {
+    float: left;
+    width: 50%;
+}
+
+.intro__item {
+    padding: 6px;
+}
+
+.intro__item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* PRODUCTS */
+.products h2 {
+    text-align: center;
+}
+
+.products__item {
+    float: left;
+    width: 25%;
+    padding: 0 6px;
+}
+
+.products__item img {
+    width: 100%;
+}
+
+.products__item button {
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    padding: 4px 10px;
+}
+
+/* BANNER */
+.banner {
+    margin-top: 36px;
+    background-image: url("../img/Banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+}
+
+.banner__content {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    background-color: rgba(131, 41, 39, 0.8);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
+.banner__content p:first-of-type {
+    font-size: 36px;
+    margin: 50px 0 0;
+}
+
+.banner__content p:nth-of-type(2) {
+    font-size: 84px;
+    margin: 0px;
+}
+
+.banner__content p:nth-of-type(3) {
+    margin-top: 0;
+}
+
+/* SERVICES */
+.services__content {
+    width: 70%;
+    padding-top: 32px;
+    margin: 0 auto;
+}
+
+.services__item {
+    float: left;
+    width: 33.33%;
+}
+
+.services__item {
+    text-align: center;
+    padding: 0 10px;
+}
+
+.services__item i {
+    font-size: 36px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer h2, .footer p {
+    margin: 0;
+}
