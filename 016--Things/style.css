@@ -126,3 +126,10 @@ img {
 .contents__item-bottom p {
     color: #495057;
 }
+
+/* RESPONSIVE */
+@media (max-width:768px) {
+    .contents {
+        flex-direction: column;
+    }
+}
