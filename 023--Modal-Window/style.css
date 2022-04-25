@@ -1,0 +1,105 @@
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: sans-serif;
+    font-size: 62.5%;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex--center {
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.btn {
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    background-color: #087f5b;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.8rem 1.6rem;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    border-color: #087f5b;
+    background-color: #fff;
+    color: #087f5b;
+    cursor: pointer;
+}
+
+/* MODAL */
+.modal {
+    height: 100vh;
+    padding: 4.8rem 0;
+    position: relative;
+}
+
+.modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 60%;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.modal-title {
+    background-color: #087f5b;
+    padding: 1.6rem 2.4rem;
+}
+
+.modal-title h1,
+.modal-title span {
+    font-size: 3rem;
+}
+
+.modal-title h1 {
+    color: #fff;
+}
+
+.modal-title span {
+    font-weight: bold;
+    color: #FCFC19;
+}
+
+.modal-title span:hover {
+    color: #e03131;
+    cursor: pointer;
+}
+
+.modal-content p {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #495057;
+    padding: 1.2rem 2.4rem;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}

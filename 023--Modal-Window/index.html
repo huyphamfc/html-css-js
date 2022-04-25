@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Window</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="modal">
+        <div class="modal-btn flex flex--center">
+            <button class="btn show-modal">Show Modal 1</button>
+            <button class="btn show-modal">Show Modal 2</button>
+            <button class="btn show-modal">Show Modal 3</button>
+        </div>
+        <div class="modal-window hidden">
+            <div class="modal-title flex">
+                <h1>Modal Window</h1>
+                <span class="hidden-modal">&times;</span>
+            </div>
+            <div class="modal-content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus excepturi tempore rem eos
+                    debitis
+                    laboriosam maxime, quasi aliquid nisi itaque, cumque fuga! Corrupti dolores asperiores at quos
+                    atque, alias distinctio optio vero eos ipsa ratione non accusantium vel quis! Sapiente ratione
+                    voluptatem dolores tenetur consequuntur tempore facilis repellendus officia.
+                </p>
+            </div>
+        </div>
+        <div class="overlay hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
