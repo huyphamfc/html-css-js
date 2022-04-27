@@ -27,4 +27,22 @@ allLinks.forEach(function (link) {
     });
 });
 
+const sectionHero = document.querySelector('.section-hero');
+const observer = new IntersectionObserver(function (entries) {
+    const ent = entries[0];
+    if (ent.isIntersecting === false) {
+        document.body.classList.add('sticky');
+    };
+    if (ent.isIntersecting === true) {
+        document.body.classList.remove('sticky');
+    };
+},
+    {
+        root: null,
+        threshold: 0,
+        rootMargin: '-80px'
+    });
+observer.observe(sectionHero);
+
+
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
