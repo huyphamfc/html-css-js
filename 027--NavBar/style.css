@@ -65,3 +65,34 @@ header {
     line-height: 3.2rem;
     color: #000;
 }
+
+
+/* RESPONSIVE */
+@media (max-width: 44em) {
+    .header__nav {
+        position: absolute;
+        top: 6.4rem;
+        left: 0;
+        width: 100%;
+        transition: all 0.5s;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        list-style: none;
+        padding: 1.6rem;
+        background-color: black;
+        transform: translateY(-100%);
+    }
+
+    .nav--open {
+        flex-direction: column;
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .btn {
+        display: block;
+    }
+}
