@@ -51,3 +51,61 @@ a {
 .fa-linkedin-in:hover {
     color: #0077b5;
 }
+
+/* HEADINGS */
+.heading__primary {
+    font-size: 3.2rem;
+    font-weight: 500;
+    letter-spacing: 0.4rem;
+    color: #495057;
+}
+
+/* HEADER */
+.header__info {
+    background: linear-gradient(to right bottom, #087F5B, #52a58c);
+    padding: 1.2rem 0;
+}
+
+.header__social {
+    gap: 1.6rem;
+}
+
+.header__icon,
+.header__info a:last-of-type {
+    width: 2.4rem;
+    height: 2.4rem;
+    text-align: center;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.header__brand span {
+    font-size: 3.6rem;
+    color: #087F5B;
+}
+
+.header__navbar {
+    background-color: #fff;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+}
+
+.header__nav {
+    gap: 2.4rem;
+}
+
+.header__nav-item {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    color: #495057;
+    transition: all 0.5s;
+}
+
+.header__nav-item:hover,
+.header__nav-item:focus,
+.active {
+    color: #087F5B;
+}
