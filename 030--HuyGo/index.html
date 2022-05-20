@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuyGo Vietnam</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="main flex">
+        <div class="container">
+            <div class="tag">
+                <p class="tag__title">HuyGo Vietnam</p>
+                <form action="" class="tag__form">
+                    <div class="form__row">
+                        <label for="distance">Distance (km): </label>
+                        <input class="form__input" type="text" id="distance">
+                    </div>
+                    <div class="form__row">
+                        <label for="waitTime">Waiting Time (min): </label>
+                        <input class="form__input" type="text" id="waitTime">
+                    </div>
+                    <div class="form__row">
+                        <label for="">Vehicle: </label>
+                        <div class="form__select flex">
+                            <div>
+                                <input class="form__input--radio" type="radio" name="vehicle" id="bike">
+                                <label for="bike">HuyBike</label>
+                            </div>
+                            <div>
+                                <input class="form__input--radio" type="radio" name="vehicle" id="bus">
+                                <label for="bus">HuyBus</label>
+                            </div>
+                            <div>
+                                <input class="form__input--radio" type="radio" name="vehicle" id="car">
+                                <label for="car">HuyCar</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__row form__cost flex">
+                        <span>Total Cost: </span>
+                        <span class="form__cost-value"></span>
+                    </div>
+                    <div class="form__row form__button flex">
+                        <button class="btn btn--cta" type="button">Calculate</button>
+                        <button class="btn btn--rs" type="button">Reset</button>
+                    </div>
+                </form>
+            </div>
+            <div class="description">
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

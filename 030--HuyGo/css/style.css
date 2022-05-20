@@ -1,0 +1,164 @@
+:root {
+    --color-pallet: #fab005;
+    --color-grey: #495057;
+    --color-grey-shade: #000;
+    --fs: 1.8rem;
+    --fs-heading: 2.4rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--fs);
+    color: var(--color-grey);
+}
+
+.flex {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    gap: 3.6rem;
+    grid-template-columns: repeat(2, 36rem);
+}
+
+.tag,
+.description {
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.description {
+    background-image: url(../img/car.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 46rem;
+}
+
+.tag__title,
+.tag__form {
+    padding: 2.4rem;
+}
+
+.tag__title {
+    font-weight: 500;
+    font-size: var(--fs-heading);
+    background-color: var(--color-pallet);
+    color: var(--color-grey-shade);
+    text-align: center;
+}
+
+.tag__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    font-size: var(--fs);
+    color: var(--color-grey-shade);
+    text-align: right;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    margin-top: 0.4rem;
+    padding: 0.4rem;
+    outline: none;
+}
+
+.form__input:hover,
+.form__input:focus,
+.form__input:active {
+    border-color: var(--color-pallet);
+}
+
+.form__select {
+    margin-top: 0.4rem;
+    padding: 0.4rem;
+}
+
+.form__cost {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--color-grey-shade);
+}
+
+.form__cost-value {
+    color: var(--color-pallet);
+}
+
+.form__button {
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: block;
+    font-weight: 500;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 8px;
+    padding: 1.2rem 3.2rem;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn--cta {
+    flex-grow: 3;
+    background-color: var(--color-pallet);
+}
+
+.btn--cta:hover {
+    background-color: var(--color-grey);
+    color: var(--color-pallet);
+}
+
+.btn--rs {
+    flex-grow: 1;
+}
+
+.btn--rs:hover {
+    background-color: var(--color-grey);
+    color: var(--color-pallet);
+}
+
+/* RESPONSIVE */
+@media (max-width: 50em) {
+    .main {
+        height: auto;
+        padding: 9.6rem 0;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 34em) {
+    .form__select {
+        flex-direction: column;
+    }
+}
