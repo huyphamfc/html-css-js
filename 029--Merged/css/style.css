@@ -35,6 +35,10 @@ a {
     align-items: center;
 }
 
+.hidden {
+    display: none;
+}
+
 /* FONT AWESOME */
 .fa-facebook-f:hover {
     color: #527dbd;
@@ -61,10 +65,10 @@ a {
 }
 
 .heading__secondary {
-    font-size: 4.8rem;
+    font-size: 5.2rem;
     font-weight: 400;
-    line-height: 4.8rem;
-    letter-spacing: 1.25rem;
+    line-height: 5.2rem;
+    letter-spacing: 0.8rem;
     text-align: center;
     color: #fff;
 }
@@ -165,7 +169,7 @@ a {
     position: relative;
 }
 
-.carousel__content {
+.carousel__item {
     flex-direction: column;
     gap: 3.2rem;
 }
@@ -188,4 +192,9 @@ a {
     height: 1.2rem;
     background-color: #fff;
     margin: 0.8rem;
+    cursor: pointer;
+}
+
+.carousel__dot--selected {
+    background-color: #0077b5;
 }
