@@ -144,7 +144,7 @@ a {
 
 /* HEADER */
 .header__info {
-    background: linear-gradient(to right bottom, #087F5B, #52a58c);
+    background: linear-gradient(to right bottom, #0077b5, #66add3);
     padding: 1.2rem 0;
 }
 
@@ -165,7 +165,7 @@ a {
 
 .header__brand span {
     font-size: 3.6rem;
-    color: #087F5B;
+    color: #0077b5;
 }
 
 .header__navbar {
@@ -189,7 +189,7 @@ a {
 .header__nav-item:hover,
 .header__nav-item:focus,
 .active {
-    color: #087F5B;
+    color: #0077b5;
 }
 
 /* CAROUSEL */
