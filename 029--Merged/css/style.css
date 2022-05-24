@@ -56,6 +56,18 @@ a {
     color: #0077b5;
 }
 
+.fa-table-cells-large,
+.fa-share-from-square,
+.fa-maximize {
+    width: 4.8rem;
+    height: 4.8rem;
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    text-align: center;
+    color: #087F5B;
+    margin-bottom: 2.4rem;
+}
+
 /* HEADINGS */
 .heading__primary {
     font-size: 3.2rem;
@@ -73,11 +85,31 @@ a {
     color: #fff;
 }
 
+.heading__tertiary {
+    font-size: 4.8rem;
+    font-weight: 500;
+    line-height: 4.8rem;
+    text-align: center;
+    padding: 8rem 0 1.8rem;
+}
+
+.heading__title {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
 .heading__paragraph {
     font-size: 1.6rem;
     line-height: 3.2rem;
     text-align: center;
     color: #f8f9fa;
+}
+
+.heading__paragraph--grey {
+    color: #495057;
+    line-height: 2.4rem;
 }
 
 /* BUTTON */
@@ -197,4 +229,53 @@ a {
 
 .carousel__dot--selected {
     background-color: #0077b5;
+}
+
+/* BUSINESS */
+.business__title p {
+    padding-bottom: 8rem;
+}
+
+.business__title::after {
+    width: 70%;
+    height: 1px;
+    transform: translateX(20%);
+    content: "";
+    display: inline-block;
+    background-color: #dee2e6;
+}
+
+/* .business__content {
+    gap: 3.2rem;
+} */
+
+.business__item {
+    flex-direction: column;
+    margin: 4.8rem 0 8rem;
+    padding: 1.6rem;
+}
+
+.business__item:nth-child(2) {
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+}
+
+.business__banner {
+    background-image: url(../img/services.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 9.6rem 0;
+}
+
+.banner__title {
+    font-size: 4.4rem;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    flex-basis: 75%;
+}
+
+.business__banner .button:hover {
+    background-color: #087F5B;
+    border-color: transparent;
 }
