@@ -6,29 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation Bar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="header container flex">
-            <h1><a class="header__brand" href="#">huyphamfc</a></h1>
-            <nav>
-                <ul class="header__nav flex">
-                    <li><a class="header__nav-item" href="#">Home</a></li>
-                    <li><a class="header__nav-item" href="#">About</a></li>
-                    <li><a class="header__nav-item" href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="btn">
-                <svg xmlns="http://www.w3.org/2000/svg" class="btn_icon" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
+    <nav class="nav">
+        <div class="container flex">
+            <h1><a class="nav__brand" href="#">BRAND</a></h1>
+            <ul class="nav__navbar flex">
+                <li class="nav__navbar-item"><a class="nav__link" href="#">Home</a></li>
+                <li class="nav__navbar-item dropdown">
+                    <a class="nav__link" href="#">Features <i class="icon fa-solid fa-angle-down"></i></a>
+                    <ul class="dropdown__content">
+                        <li><a class="nav__link" href="#">Pages</a></li>
+                        <li><a class="nav__link" href="#">Elements</a></li>
+                        <li><a class="nav__link" href="#">Icons</a></li>
+                    </ul>
+                </li>
+                <li class="nav__navbar-item"><a class="nav__link" href="#">Services</a></li>
+            </ul>
+            <button class="nav__toggler"><i class="icon fa-solid fa-bars"></i></button>
         </div>
-    </header>
-    <script src="script.js"></script>
+    </nav>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
