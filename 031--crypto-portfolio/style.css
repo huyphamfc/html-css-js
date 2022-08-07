@@ -1,22 +1,23 @@
 /* GLOBAL */
 :root {
-    --fs-base: 1.6rem;
+    --fs-base: 1.8rem;
     --fs-heading: 2.8rem;
     --fs-heading-secondary: 4.4rem;
 
     --color-palette: #f0b90b;
+    --color-dark: #46484d;
     --color-very-dark: #181a20;
     --color-light: #eaecef;
     --color-very-light: #fff;
 
-    --border-radius: 1rem;
+    --border-radius: 0.8rem;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: solid red 1px; */
+    border: solid red 1px;
 }
 
 html {
@@ -37,18 +38,26 @@ img {
 
 .container {
     max-width: 120rem;
-    margin: 0 auto;
-    padding: 0 3.2rem;
+    margin: 4.8rem auto;
+    padding: 2.4rem 3.2rem;
+    border-radius: var(--border-radius);
+    background-color: var(--color-dark);
 }
 
 .btn {
     display: inline-block;
     font-size: 1.8rem;
-    padding: 1.8rem 3.6rem;
+    padding: 1.2rem 2.4rem;
     background-color: var(--color-palette);
     color: var(--color-very-dark);
+    border: solid transparent 2px;
     border-radius: var(--border-radius);
     transition: all 0.5s;
+}
+
+.btn--sub {
+    background-color: var(--color-very-dark);
+    color: var(--color-light);
 }
 
 .btn:hover {
@@ -61,9 +70,12 @@ img {
 
 /* HERO */
 .hero {
+    max-width: 120rem;
     height: 100vh;
     display: flex;
     align-items: center;
+    margin: 0 auto;
+    padding: 0 3.2rem;
 }
 
 .hero__img {
@@ -88,7 +100,49 @@ img {
 }
 
 
+/* FORM */
+.form {
+    background-color: var(--color-dark);
+}
+
+.form__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+}
+
+.form__input {
+    width: 16rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--fs-base);
+    padding: 0.8rem;
+    background-color: var(--color-very-dark);
+    color: var(--color-palette);
+    border: solid transparent 2px;
+    border-radius: var(--border-radius);
+    outline: none;
+}
+
+.form__input:focus {
+    border-color: var(--color-palette);
+}
+
+.form__button {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.6rem;
+    padding: 1.6rem 0 0.8rem;
+}
+
+
 /* RESPONSIVE */
+@media (max-width: 75em) {
+    .container {
+        margin: 4.8rem 2.4rem;
+    }
+}
+
 @media (max-width:68em) {
     .hero__img {
         display: none;
